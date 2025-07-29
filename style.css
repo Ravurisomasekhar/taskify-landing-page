@@ -1,0 +1,43 @@
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  height: 100vh;
+  padding-top: 80px;
+}
+
+/* Features Section */
+.features-section {
+  padding: 60px 20px;
+}
+
+.feature-box {
+  background-color: #ffffff;
+}
+
+/* Pricing Section */
+.pricing-section {
+  padding: 60px 20px;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.95rem;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 60px 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: #f8f9fa;
+}

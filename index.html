@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taskify – Boost Productivity</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .feature-box {
+      border: 1px solid #dee2e6;
+      border-radius: 10px;
+      padding: 20px;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .feature-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .feature-box a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .collapse-content {
+      animation: fadeIn 0.4s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Taskify</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-light text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Boost Your Productivity</h1>
+      <p class="lead">Stay organized. Stay on track. Stay productive.</p>
+      <a href="#pricing" class="btn btn-primary btn-lg">Choose Plan</a>
+    </div>
+  </header>
+
+  <section id="features" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Features</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="feature-box">
+            <a href="organize-tasks.html">
+              <h5>📋 Organize Tasks</h5>
+              <div class="collapse show collapse-content">
+                <p>Sort by priority, category, and due date. Set reminders and recurring tasks.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="feature-box">
+            <a href="track-progress.html">
+              <h5>📈 Track Progress</h5>
+              <div class="collapse show collapse-content">
+                <p>Monitor your completion stats in real-time and visualize your habits over time.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="feature-box">
+            <a href="sync-anywhere.html">
+              <h5>☁️ Sync Anywhere</h5>
+              <div class="collapse show collapse-content">
+                <p>Access your tasks from mobile, desktop, and cloud in real-time.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Pricing</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-header">Basic</div>
+            <div class="card-body">
+              <h5 class="card-title">Free</h5>
+              <p class="card-text">Limited tasks and basic features.</p>
+              <a href="#contact" class="btn btn-outline-primary">Choose Plan</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-header">Pro</div>
+            <div class="card-body">
+              <h5 class="card-title">₹99/month</h5>
+              <p class="card-text">Unlimited tasks, reminders, and cloud sync.</p>
+              <a href="#contact" class="btn btn-primary">Choose Plan</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-header">Enterprise</div>
+            <div class="card-body">
+              <h5 class="card-title">Contact Us</h5>
+              <p class="card-text">Custom integrations and priority support.</p>
+              <a href="#contact" class="btn btn-outline-primary">Choose Plan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Contact Us</h2>
+      <p>Email us at <a href="mailto:support@taskifyapp.com">support@taskifyapp.com</a></p>
+    </div>
+  </section>
+
+  <footer class="bg-primary text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Taskify. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
